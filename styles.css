@@ -185,6 +185,16 @@ button {
   position: fixed;
   top: 0;
 }
+#blog{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  
+}
+.blog-item{
+  border: 1px solid white;
+  padding: 10px;
+}
 
 @media only screen and (max-width: 700px) {
   .box-container {
@@ -194,6 +204,13 @@ button {
   .card {
     flex-direction: column;
   }
+  #blog{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    
+  }
+ 
 }
 @media only screen and (min-width: 701px) {
   #histories {
